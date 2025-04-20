@@ -1,0 +1,9 @@
+For this question my approach was to create a input function which will take string input from the user and with the help of input i am
+changing the velocity of the turtle and printing the directions. 
+While on the same time the subscriber node prints the x and y coordinates upto 2 decimals
+
+problems:
+    1.i initially tried to create a large class and then execute the functions in it but that somehow didnt work and had
+    a lot of errors
+    2.due to time constraint i couldnt initialize the bot to cartesian zero although i read that it uses /kill and /spawn to 
+    restart the coordinates of the turtle sim 

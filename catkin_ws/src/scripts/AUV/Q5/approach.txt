@@ -1,2 +1,9 @@
 For this question i created a camlink node which will publish the ros image which we converted with the help of cvbridge.
-the edgeviewer node requires 
+the basic code of the camera pipeline is same as q4, i just tried to add a link between ros and depthai pipeline.
+This was done with the help of cvbridge which converts rawimg to numpy arrays which cv2 uses.
+I took help from deepseek for the syntax usage while using the cv2 bridge
+
+SOME HUGE PROBLEMS I FACED:
+    1 - while downloading opencv in my ubuntu os the ros file got corrupted and then it took me another 4 hrs to reinstall ros
+    2 - as i rarely worked on git, even though creating a repo was easy but pushing the files into it had a lot of errors which i fixed
+        using another method

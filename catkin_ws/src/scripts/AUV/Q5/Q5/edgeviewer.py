@@ -18,6 +18,7 @@ class subscriber:
             rospy.logerr(e)
 
     def run(self):
+        self.init()
         rospy.spin()
         cv2.destroyAllWindows()
 
