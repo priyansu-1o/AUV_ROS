@@ -1,0 +1,10 @@
+For this question i watched a couple of videos on how the basic template of a depthAI code looks like and the problem is there are not
+many courses or sources where you can learn from. But luckily i found one video where he explained how the template should look like
+and how the system works
+
+I first created a pipeline, then i created a camera node and marked it as left camera and added the required properties to it
+then with the help of xlinkout i linked it to the host 
+
+Then on the device block 
+    i created a queue which can store a frame history of 4 size and i extracted frames from it till we dont press quit(q) and the output
+    can be seen in a window

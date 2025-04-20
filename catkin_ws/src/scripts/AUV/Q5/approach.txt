@@ -1,0 +1,2 @@
+For this question i created a camlink node which will publish the ros image which we converted with the help of cvbridge.
+the edgeviewer node requires 
