@@ -5,3 +5,5 @@ But when i completed the code of this dual input method there was a issue with p
 
 So i checked for some other ways in which i can run dual input nodes and I found out the concept of threading :
 threading basically runs multiple programs under a single program and after the threads complete we have to join them to the parent program
+
+i took help of chatgpt with certain parts of the program while debugging and creating the basic template of threading
