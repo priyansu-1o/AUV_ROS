@@ -1,0 +1,7 @@
+Approach and problems faced:
+
+So my thought process for this was to create two terminals which will take inputs and the third one will basically print all the inputs.
+But when i completed the code of this dual input method there was a issue with printing the msgs from whom it came and it was not spontaneous
+
+So i checked for some other ways in which i can run dual input nodes and I found out the concept of threading :
+threading basically runs multiple programs under a single program and after the threads complete we have to join them to the parent program

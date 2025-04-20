@@ -1,35 +1,16 @@
 #!/usr/bin/env python3
+
 import rospy
-from std_msgs.msg import String
+from turtlesim.msg import Pose
 
-user=""
+def pose_callback(msg):
+    rospy.loginfo(f"Turtle Pose - x: {msg.x:.2f}, y: {msg.y:.2f}, theta: {msg.theta:.2f}")
 
-def callback(msg):
-    global user
-    if not msg.data.startswith(f"[{user}]"):
-        print(msg.data)
+def turtle_pose_subscriber():
+    rospy.init_node("pose_subscriber")
+    rospy.Subscriber("/turtle1/pose", Pose, pose_callback)
+    rospy.loginfo("Subscriber node started")
+    rospy.spin()
 
-def chat():
-    global user
-    rospy.init_node('chat',anonymous=True)
-    user=input("Enter you name : ")
-
-    pub=rospy.Publisher('chatter',String,queue_size=10)
-    rospy.Subscriber('chatter',String,callback)
-
-    rate=rospy.Rate(1)
-
-    while not rospy.is_shutdown():
-        try:
-            msg=input(f"{user} : ")
-            format_msg=f"[{user}] : {msg}"
-            pub.publish(String(format_msg))
-            rate.sleep()
-
-        except rospy.ROSInterruptException:
-            pass
-        except:
-            break
-
-if __name__=='main_':
-    chat()
+if __name__ == "__main__":
+    turtle_pose_subscriber()

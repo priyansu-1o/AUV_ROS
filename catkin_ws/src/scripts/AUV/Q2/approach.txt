@@ -1,0 +1,5 @@
+For this question i thought of creating 3 nodes as given in question
+
+1> one node (sender) publishes the multiples of 2 at a 2hz frequency
+2> the second node (Multiplier) receives the multiples of 2 and then publishes the result after multiplying 10 to it
+3> the third node (add5) adds five to the received data and prints the final result 
